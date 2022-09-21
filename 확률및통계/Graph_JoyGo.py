@@ -49,7 +49,6 @@ class GraphJoyGo() :
         for _ in range(1, classNum+2) : 
             start = quota ; quota += interval ; end = quota
             dtDict[(start+end)/2] = chkFrequency(start, end)
-        print(dtDict)              # Test code / please delete the contents of this line.
         for i in range(max(dtDict.values()), 0, -1) : 
             for j in dtDict : 
                 if dtDict[j] >= i : print("  * ", end="   ")
@@ -58,6 +57,7 @@ class GraphJoyGo() :
 
         for i in dtDict : 
             print(i, end="   ")
+        print("\n")
         self.dt = deque(dt)
 
 if __name__ == "__main__" : 
