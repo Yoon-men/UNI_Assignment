@@ -8,6 +8,8 @@ int p2_x = 0, p2_y = 6;
 int p3_x = 0, p3_y = 9;
 int p4_x = 0, p4_y = 12;
 
+int rank_1, rank_2, rank_3, rank_4;
+
 
 void GoToXY(int x, int y)
 {
@@ -65,32 +67,31 @@ void MoveP()
 		if (status_1 && p1_x >= 100)
 		{
 			GoToXY(0, 16);
-			printf("1번 선수 : %d등", rank);
+			printf(">>> 1번 선수 : %d등", rank);
 			rank++;
 			status_1 = 0;
 		}
 		if (status_2 && p2_x >= 100)
 		{
 			GoToXY(0, 17);
-			printf("2번 선수 : %d등", rank);
+			printf(">>> 2번 선수 : %d등", rank);
 			rank++;
 			status_2 = 0;
 		}
 		if (status_3 && p3_x >= 100)
 		{
 			GoToXY(0, 18);
-			printf("3번 선수 : %d등", rank);
+			printf(">>> 3번 선수 : %d등", rank);
 			rank++;
 			status_3 = 0;
 		}
 		if (status_4 && p4_x >= 100)
 		{
 			GoToXY(0, 19);
-			printf("4번 선수 : %d등", rank);
+			printf(">>> 4번 선수 : %d등", rank);
 			rank++;
 			status_4 = 0;
 		}
-
 	}
 }
 
