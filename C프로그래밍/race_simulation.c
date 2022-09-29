@@ -19,7 +19,7 @@ void GoToXY(int x, int y)
 
 void DrawLine()				// 결승선을 그려요
 {
-	for (int y = 0;y < 15;y++)
+	for (int y = 0; y < 15; y++)
 	{
 		GoToXY(100, y);
 		printf("|");
@@ -54,7 +54,7 @@ void MoveP()
 	int status_1 = 1, status_2 = 1, status_3 = 1, status_4 = 1;
 	while (p1_x < 100 | p2_x < 100 | p3_x < 100 | p4_x < 100)
 	{
-		Sleep(100);
+		Sleep(1000);
 		DelPreviousPs();
 
 		p1_x += (p1_x < 100) ? rand() % 3 + 1 : 0;
@@ -66,29 +66,25 @@ void MoveP()
 
 		if (status_1 && p1_x >= 100)
 		{
-			GoToXY(0, 16);
-			printf(">>> 1번 선수 : %d등", rank);
+			rank_1 = rank;
 			rank++;
 			status_1 = 0;
 		}
 		if (status_2 && p2_x >= 100)
 		{
-			GoToXY(0, 17);
-			printf(">>> 2번 선수 : %d등", rank);
+			rank_2 = rank;
 			rank++;
 			status_2 = 0;
 		}
 		if (status_3 && p3_x >= 100)
 		{
-			GoToXY(0, 18);
-			printf(">>> 3번 선수 : %d등", rank);
+			rank_3 = rank;
 			rank++;
 			status_3 = 0;
 		}
 		if (status_4 && p4_x >= 100)
 		{
-			GoToXY(0, 19);
-			printf(">>> 4번 선수 : %d등", rank);
+			rank_4 = rank;
 			rank++;
 			status_4 = 0;
 		}
@@ -104,5 +100,8 @@ void main()
 	MoveP();
 
 	GoToXY(0, 20);
-	printf(" ");
+	printf(">>> 1번 선수 : %d등\n", rank_1);
+	printf(">>> 2번 선수 : %d등\n", rank_2);
+	printf(">>> 3번 선수 : %d등\n", rank_3);
+	printf(">>> 4번 선수 : %d등\n", rank_4);
 }
