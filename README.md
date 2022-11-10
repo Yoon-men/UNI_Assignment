@@ -13,6 +13,7 @@
 <br>
 
 - 이항확률분포그래프 작성 프로그램
+![image](https://user-images.githubusercontent.com/64591335/201030554-97e432a3-cb60-42ae-a083-3d793955866b.png)
 
 <br>
 
