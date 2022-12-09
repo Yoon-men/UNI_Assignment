@@ -25,6 +25,6 @@
 
 - 퍼즐 맞추기 게임 프로그램
 
-![image](https://user-images.githubusercontent.com/64591335/206729874-b550603f-dee4-4c09-9ab3-4030a1d97841.png)
+![image](https://user-images.githubusercontent.com/64591335/206730306-0770cec6-04e1-448c-9db6-ff79ec65dfc9.png)
 
 <br>
