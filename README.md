@@ -20,3 +20,11 @@
 ## C프로그래밍 (1 - 2)
 - 달리기 시합 시뮬레이션 프로그램
 ![image](https://user-images.githubusercontent.com/64591335/193814679-003d7fe6-02c2-4dd7-a9ed-96a1f43dd20d.png)
+
+<br>
+
+- 퍼즐 맞추기 게임 프로그램
+
+![image](https://user-images.githubusercontent.com/64591335/206729874-b550603f-dee4-4c09-9ab3-4030a1d97841.png)
+
+<br>
